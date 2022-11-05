@@ -2,6 +2,8 @@
 Visualization functions
 """
 
+from typing import Optional
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -12,7 +14,13 @@ from .atom_data import atom_colors
 __all__ = ["draw_molecule", "bond_histogram"]
 
 
-def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
+def draw_molecule(
+    coordinates: np.ndarray,
+    symbols: np.ndarray,
+    draw_bonds: bool = False,
+    save_location: Optional[str] = None,
+    dpi: float = 300,
+) -> Axes3D:
 
     # Draw a picture of a molecule using matplotlib.
 

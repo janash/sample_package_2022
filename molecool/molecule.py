@@ -67,6 +67,28 @@ def calculate_center_of_mass(symbols, coordinates):
 
 
 def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
+    """
+    Calculate bonds in a molecule base on a distance criteria.
+    The pairwise distance between atoms is computed. If it is in the range
+    `min_bond` to `max_bond`, the atoms are counted as bonded.
+
+    Parameters
+    ----------
+    coordinates : array-like
+        The coordinates of the atoms.
+    max_bond : float (optional)
+        The maximum distance for two points to be considered bonded. The default
+        is 1.5
+    min_bond : float (optional)
+        The minimum distance for two points to be considered bonded. The default
+        is 0.
+
+    Returns
+    -------
+    bonds : dict
+        A dictionary where the keys are tuples of the bonded atom indices, and the
+        associated values are the bond length.
+    """
 
     if min_bond < 0:
         raise ValueError(

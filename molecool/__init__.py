@@ -1,6 +1,5 @@
 """
-sample_package_2021
-This is a sample repo for the MolSSI Best Practices Workshop - January 2021
+This is a sample repo for the MolSSI Best Practices Workshop - 2022
 """
 
 # Add imports here

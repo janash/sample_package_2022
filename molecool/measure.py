@@ -5,7 +5,9 @@ Functions related to measurements.
 import numpy as np
 
 
-def calculate_angle(rA, rB, rC, degrees=False):
+def calculate_angle(
+    rA: np.ndarray, rB: np.ndarray, rC: np.ndarray, degrees: bool = False
+) -> float:
     """Calculate the angle between three points.
 
     Parameters
@@ -32,7 +34,7 @@ def calculate_angle(rA, rB, rC, degrees=False):
         return theta
 
 
-def calculate_distance(rA, rB):
+def calculate_distance(rA: np.ndarray, rB: np.ndarray) -> float:
     """Calculate the distance between two points.
 
     Parameters
