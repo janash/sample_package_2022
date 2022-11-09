@@ -5,6 +5,8 @@
 
 Welcome to molecool's documentation!
 =========================================================
+This is a package designed to read in, perform analysis, and
+visualize molecular coordinates.
 
 .. toctree::
    :maxdepth: 2
